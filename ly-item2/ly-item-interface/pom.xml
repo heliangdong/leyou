@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>ly-item2</artifactId>
+        <groupId>com.leyou.service</groupId>
+        <version>0.0.1-SNAPSHOT</version>
+        <!--<artifactId>leyou99</artifactId>-->
+        <!--<groupId>com.leyou.parent</groupId>-->
+        <!--<version>0.0.1-SNAPSHOT</version>-->
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>ly-item-interface</artifactId>
+
+
+    <dependencies>
+        <dependency>
+            <groupId>javax.persistence</groupId>
+            <artifactId>persistence-api</artifactId>
+            <version>1.0</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>tk.mybatis</groupId>
+            <artifactId>mapper-core</artifactId>
+            <version>1.0.4</version>
+        </dependency>
+        <dependency>
+            <groupId>com.leyou.parent</groupId>
+            <artifactId>ly-common</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
+        <!-- feign -->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-openfeign</artifactId>
+        </dependency>
+    </dependencies>
+
+    <!--<build>-->
+    <!--<pluginManagement>-->
+        <!--<plugins>-->
+            <!--<plugin>-->
+                <!--<groupId>org.apache.maven.plugins</groupId>-->
+                <!--<artifactId>maven-compiler-plugin</artifactId>-->
+                <!--<version>3.5.1</version>-->
+                <!--<configuration>-->
+                    <!--<source>1.8</source>-->
+                    <!--<target>1.8</target>-->
+                    <!--<encoding>UTF-8</encoding>-->
+                    <!--&lt;!&ndash; 过期的方法的警告-->
+                      <!--<compilerArgs>-->
+                          <!--<arg>-Xlint:deprecation</arg>-->
+                      <!--</compilerArgs> &ndash;&gt;-->
+                    <!--<compilerArguments>-->
+                        <!--&lt;!&ndash; 是否输出所有的编译信息（包括类的加载等）&ndash;&gt;-->
+                        <!--&lt;!&ndash;<verbose />&ndash;&gt;-->
+                        <!--&lt;!&ndash; 解决maven命令编译报错，因为rt.jar 和jce.jar在jre的lib下面，不在jdk的lib下面，-->
+                        <!--导致maven找不到（java7以后会出现这个问题），将这2个jar包拷贝到jdk的lib下面估计也好使&ndash;&gt;-->
+                        <!--<bootclasspath>${java.home}\lib\rt.jar;${java.home}\lib\jce.jar</bootclasspath>-->
+                    <!--</compilerArguments>-->
+                <!--</configuration>-->
+            <!--</plugin>-->
+        <!--</plugins>-->
+    <!--</pluginManagement>-->
+    <!--</build>-->
+
+
+</project>
